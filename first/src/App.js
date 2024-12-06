@@ -6,12 +6,16 @@ function App() {
   const handle=()=>{
     setCounter(counter+1)
   }
+  const handleDecrement=()=>{
+    setCounter(counter-1)
+  }
   return (
     <div>
 <button onClick={handle}>
   
   increment
 </button>
+<button onClick={handleDecrement}>Decrement</button>
 <h1>{counter}
 
 </h1>
