@@ -9,6 +9,9 @@ function App() {
   const handleDecrement=()=>{
     setCounter(counter-1)
   }
+  const handleReset=()=>{
+    setCounter(0)
+  }
   return (
     <div>
 <button onClick={handle}>
@@ -16,6 +19,7 @@ function App() {
   increment
 </button>
 <button onClick={handleDecrement}>Decrement</button>
+<button onClick={handleReset}>reset</button>
 <h1>{counter}
 
 </h1>
